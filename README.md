@@ -34,3 +34,16 @@ retryPromise(fetch(url),{
 
 
 ```
+
+## Javascript
+### Spread Operator
+
+Update a property of all items
+```
+rows.map((item) => ({...item, role: 'user'})
+```
+
+Set an item to be on top of array
+```
+[rows.filter( x => x.id === id)[0], ...rows.filter( x => x.id !== id )]
+```
