@@ -47,3 +47,12 @@ Set an item to be on top of array
 ```
 [rows.filter( x => x.id === id)[0], ...rows.filter( x => x.id !== id )]
 ```
+
+Concat multiple array
+```
+[
+  ...array1,
+  ...array2,
+  ...array3
+]
+``` 
