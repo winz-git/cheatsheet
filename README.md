@@ -56,3 +56,16 @@ Concat multiple array
   ...array3
 ]
 ``` 
+
+Update an object in an array of objects
+```
+setRows(prev => {
+        prev.map(x => {
+            if (x.id === data.id){
+                x.updatedBy = username;
+            }
+            return x;
+        })
+        return prev;
+    });
+```
